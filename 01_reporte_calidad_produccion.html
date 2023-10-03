@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,14 +18,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -39,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="01_reporte_calidad_produccion_files/libs/clipboard/clipboard.min.js"></script>
@@ -65,26 +65,26 @@ div.csl-indent {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="toc-section-number">1</span>  Introducción</a></li>
-  <li><a href="#materiales-y-métodos" id="toc-materiales-y-métodos" class="nav-link" data-scroll-target="#materiales-y-métodos"><span class="toc-section-number">2</span>  Materiales y Métodos</a>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">1</span> Introducción</a></li>
+  <li><a href="#materiales-y-métodos" id="toc-materiales-y-métodos" class="nav-link" data-scroll-target="#materiales-y-métodos"><span class="header-section-number">2</span> Materiales y Métodos</a>
   <ul class="collapse">
-  <li><a href="#tratamientos-de-riego-deficitario" id="toc-tratamientos-de-riego-deficitario" class="nav-link" data-scroll-target="#tratamientos-de-riego-deficitario"><span class="toc-section-number">2.1</span>  Tratamientos de riego deficitario</a></li>
-  <li><a href="#indicadores-de-potencial-hídrico-y-fluorescencia" id="toc-indicadores-de-potencial-hídrico-y-fluorescencia" class="nav-link" data-scroll-target="#indicadores-de-potencial-hídrico-y-fluorescencia"><span class="toc-section-number">2.2</span>  Indicadores de potencial hídrico y fluorescencia</a></li>
-  <li><a href="#cosecha-y-evaluación-de-la-calidad-de-la-fruta" id="toc-cosecha-y-evaluación-de-la-calidad-de-la-fruta" class="nav-link" data-scroll-target="#cosecha-y-evaluación-de-la-calidad-de-la-fruta"><span class="toc-section-number">2.3</span>  Cosecha y evaluación de la calidad de la fruta</a></li>
-  <li><a href="#análisis-estadístico" id="toc-análisis-estadístico" class="nav-link" data-scroll-target="#análisis-estadístico"><span class="toc-section-number">2.4</span>  Análisis estadístico</a></li>
+  <li><a href="#tratamientos-de-riego-deficitario" id="toc-tratamientos-de-riego-deficitario" class="nav-link" data-scroll-target="#tratamientos-de-riego-deficitario"><span class="header-section-number">2.1</span> Tratamientos de riego deficitario</a></li>
+  <li><a href="#indicadores-de-potencial-hídrico-y-fluorescencia" id="toc-indicadores-de-potencial-hídrico-y-fluorescencia" class="nav-link" data-scroll-target="#indicadores-de-potencial-hídrico-y-fluorescencia"><span class="header-section-number">2.2</span> Indicadores de potencial hídrico y fluorescencia</a></li>
+  <li><a href="#cosecha-y-evaluación-de-la-calidad-de-la-fruta" id="toc-cosecha-y-evaluación-de-la-calidad-de-la-fruta" class="nav-link" data-scroll-target="#cosecha-y-evaluación-de-la-calidad-de-la-fruta"><span class="header-section-number">2.3</span> Cosecha y evaluación de la calidad de la fruta</a></li>
+  <li><a href="#análisis-estadístico" id="toc-análisis-estadístico" class="nav-link" data-scroll-target="#análisis-estadístico"><span class="header-section-number">2.4</span> Análisis estadístico</a></li>
   </ul></li>
-  <li><a href="#resultados-y-discusión" id="toc-resultados-y-discusión" class="nav-link" data-scroll-target="#resultados-y-discusión"><span class="toc-section-number">3</span>  Resultados y Discusión</a>
+  <li><a href="#resultados-y-discusión" id="toc-resultados-y-discusión" class="nav-link" data-scroll-target="#resultados-y-discusión"><span class="header-section-number">3</span> Resultados y Discusión</a>
   <ul class="collapse">
-  <li><a href="#potencial-hídrico-y-fluorescencia" id="toc-potencial-hídrico-y-fluorescencia" class="nav-link" data-scroll-target="#potencial-hídrico-y-fluorescencia"><span class="toc-section-number">3.1</span>  Potencial hídrico y fluorescencia</a></li>
-  <li><a href="#producción-y-parámetros-de-calidad-de-la-fruta" id="toc-producción-y-parámetros-de-calidad-de-la-fruta" class="nav-link" data-scroll-target="#producción-y-parámetros-de-calidad-de-la-fruta"><span class="toc-section-number">3.2</span>  Producción y parámetros de calidad de la fruta</a>
+  <li><a href="#potencial-hídrico-y-fluorescencia" id="toc-potencial-hídrico-y-fluorescencia" class="nav-link" data-scroll-target="#potencial-hídrico-y-fluorescencia"><span class="header-section-number">3.1</span> Potencial hídrico y fluorescencia</a></li>
+  <li><a href="#producción-y-parámetros-de-calidad-de-la-fruta" id="toc-producción-y-parámetros-de-calidad-de-la-fruta" class="nav-link" data-scroll-target="#producción-y-parámetros-de-calidad-de-la-fruta"><span class="header-section-number">3.2</span> Producción y parámetros de calidad de la fruta</a>
   <ul class="collapse">
-  <li><a href="#la-esperanza" id="toc-la-esperanza" class="nav-link" data-scroll-target="#la-esperanza"><span class="toc-section-number">3.2.1</span>  La Esperanza</a></li>
-  <li><a href="#río-claro" id="toc-río-claro" class="nav-link" data-scroll-target="#río-claro"><span class="toc-section-number">3.2.2</span>  Río Claro</a></li>
+  <li><a href="#la-esperanza" id="toc-la-esperanza" class="nav-link" data-scroll-target="#la-esperanza"><span class="header-section-number">3.2.1</span> La Esperanza</a></li>
+  <li><a href="#río-claro" id="toc-río-claro" class="nav-link" data-scroll-target="#río-claro"><span class="header-section-number">3.2.2</span> Río Claro</a></li>
   </ul></li>
-  <li><a href="#daños-fisiológicos-en-cerezas" id="toc-daños-fisiológicos-en-cerezas" class="nav-link" data-scroll-target="#daños-fisiológicos-en-cerezas"><span class="toc-section-number">3.3</span>  Daños fisiológicos en cerezas</a></li>
+  <li><a href="#daños-fisiológicos-en-cerezas" id="toc-daños-fisiológicos-en-cerezas" class="nav-link" data-scroll-target="#daños-fisiológicos-en-cerezas"><span class="header-section-number">3.3</span> Daños fisiológicos en cerezas</a></li>
   </ul></li>
-  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión"><span class="toc-section-number">4</span>  Conclusión</a></li>
-  <li><a href="#figuras-suplementarias" id="toc-figuras-suplementarias" class="nav-link" data-scroll-target="#figuras-suplementarias"><span class="toc-section-number">5</span>  Figuras Suplementarias</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión"><span class="header-section-number">4</span> Conclusión</a></li>
+  <li><a href="#figuras-suplementarias" id="toc-figuras-suplementarias" class="nav-link" data-scroll-target="#figuras-suplementarias"><span class="header-section-number">5</span> Figuras Suplementarias</a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
@@ -138,7 +138,7 @@ div.csl-indent {
 <div id="fig-riego-la-esperanza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-riego-la-esperanza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;1: Riego acumulado semanal y total. La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;1: Riego acumulado semanal y total. La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -150,7 +150,7 @@ div.csl-indent {
 <div id="fig-campo-rio-claro" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-campo-rio-claro-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2: Riego acumulado semanal y total. Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;2: Riego acumulado semanal y total. Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -184,7 +184,7 @@ div.csl-indent {
 <div id="fig-riego-campo-la-esperanza-tratamiento0" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-riego-campo-la-esperanza-tratamiento0-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;3: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).La Esperanza. Riego habitual (T0)</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;3: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).La Esperanza. Riego habitual (T0)</figcaption>
 </figure>
 </div>
 </div>
@@ -196,7 +196,7 @@ div.csl-indent {
 <div id="fig-esperanza-dinámica-del-potencial-hídrico-y-la-fluorescencia" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-esperanza-dinámica-del-potencial-hídrico-y-la-fluorescencia-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;4: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).La Esperanza.Tratamientos</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;4: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).La Esperanza.Tratamientos</figcaption>
 </figure>
 </div>
 </div>
@@ -207,7 +207,7 @@ div.csl-indent {
 <div id="fig-riego-campo-rio-claro-tratamiento-0" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-riego-campo-rio-claro-tratamiento-0-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;5: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).Río Claro. Riego habitual (T0)</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;5: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).Río Claro. Riego habitual (T0)</figcaption>
 </figure>
 </div>
 </div>
@@ -220,7 +220,7 @@ div.csl-indent {
 <div id="fig-rio-claro-dinámica-del-potencial-hídrico-y-la-fluorescencia" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-rio-claro-dinámica-del-potencial-hídrico-y-la-fluorescencia-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;6: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).Río Claro.Tratamientos</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;6: Dinámica del potencial hídrico xilématico al mediodía y el indicador de fluorescencia (Fv/Fm).Río Claro.Tratamientos</figcaption>
 </figure>
 </div>
 </div>
@@ -238,7 +238,7 @@ div.csl-indent {
 <div id="fig-laesperanza-calidad-peso-de-unidad-de-cereza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-laesperanza-calidad-peso-de-unidad-de-cereza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;7: Comparación del peso de una unidad de cereza (gr) entre los distintos tratamientos.La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;7: Comparación del peso de una unidad de cereza (gr) entre los distintos tratamientos.La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -249,7 +249,7 @@ div.csl-indent {
 <div id="fig-laesperanza-calidad-diámetro-de-unidad-de-cereza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-laesperanza-calidad-diámetro-de-unidad-de-cereza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;8: Comparación del diámetro de una unidad de cereza (mm) entre los distintos tratamientos.La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;8: Comparación del diámetro de una unidad de cereza (mm) entre los distintos tratamientos.La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -260,7 +260,7 @@ div.csl-indent {
 <div id="fig-laesperanza-calidad-color-de-unidad-de-cereza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-laesperanza-calidad-color-de-unidad-de-cereza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;9: Comparación del color de cerezas entre los distintos tratamientos.La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;9: Comparación del color de cerezas entre los distintos tratamientos.La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -271,7 +271,7 @@ div.csl-indent {
 <div id="fig-laesperanza-calidad-grados-brix" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-laesperanza-calidad-grados-brix-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10: Comparación de la concentración de sólidos solubres en cerezas entre los distintos tratamientos.La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;10: Comparación de la concentración de sólidos solubres en cerezas entre los distintos tratamientos.La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -282,7 +282,7 @@ div.csl-indent {
 <div id="fig-laesperanza-calidad-producción-total-por-árbol" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-laesperanza-calidad-producción-total-por-árbol-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;11: Comparación de la productividad de cerezas por árbol (Kg).La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;11: Comparación de la productividad de cerezas por árbol (Kg).La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -296,7 +296,7 @@ div.csl-indent {
 <div id="fig-ríoclaro-calidad-peso-de-unidaddecereza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-ríoclaro-calidad-peso-de-unidaddecereza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;12: Comparación del peso de una unidad de cereza (gr) entre los distintos tratamientos.Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;12: Comparación del peso de una unidad de cereza (gr) entre los distintos tratamientos.Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -307,7 +307,7 @@ div.csl-indent {
 <div id="fig-ríoclaro-calidad-diámetro-de-unidad-de-cereza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-ríoclaro-calidad-diámetro-de-unidad-de-cereza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;13: Comparación del diámetro de una unidad de cereza (mm) entre los distintos tratamientos.Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;13: Comparación del diámetro de una unidad de cereza (mm) entre los distintos tratamientos.Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -318,7 +318,7 @@ div.csl-indent {
 <div id="fig-ríoclaro-calidad-comparación-del-color-de-la-cereza" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-ríoclaro-calidad-comparación-del-color-de-la-cereza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;14: Comparación del color de las cerezas entre los distintos tratamientos.Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;14: Comparación del color de las cerezas entre los distintos tratamientos.Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -329,7 +329,7 @@ div.csl-indent {
 <div id="fig-ríoclaro-calidad-gradosbrix" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-ríoclaro-calidad-gradosbrix-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;15: Comparación de la concentración de sólidos solubres en cerezas entre los distintos tratamientos.Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;15: Comparación de la concentración de sólidos solubres en cerezas entre los distintos tratamientos.Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -340,7 +340,7 @@ div.csl-indent {
 <div id="fig-río-claro-calidad-producción-totalporárbol" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-río-claro-calidad-producción-totalporárbol-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;16: Comparación de la productividad de cerezas por árbol (Kg).Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;16: Comparación de la productividad de cerezas por árbol (Kg).Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -355,7 +355,7 @@ div.csl-indent {
 <div id="fig-laesperanza-defectos-de-cerezas" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-laesperanza-defectos-de-cerezas-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;17: Proporción de cerezas con daños por Kg producido por tratamiento.La Esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;17: Proporción de cerezas con daños por Kg producido por tratamiento.La Esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -365,7 +365,7 @@ div.csl-indent {
 <div id="fig-ríoclaro-defectosdecerezas" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/fig-ríoclaro-defectosdecerezas-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;18: Proporción de cerezas con daños por Kg producido por tratamiento.Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Figura&nbsp;18: Proporción de cerezas con daños por Kg producido por tratamiento.Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -392,7 +392,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/anexo1-la-esperanza-t1-potencial-riego-y-fv/fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 1: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T1</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 1: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T1</figcaption>
 </figure>
 </div>
 </div>
@@ -402,7 +402,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo2.%20La%20Esperanza.T2.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 2: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T2</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 2: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T2</figcaption>
 </figure>
 </div>
 </div>
@@ -412,7 +412,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo3.%20La%20Esperanza.T3.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig. Suplementaria 3: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T3</figcaption><p></p>
+<figcaption class="figure-caption">Fig. Suplementaria 3: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T3</figcaption>
 </figure>
 </div>
 </div>
@@ -422,7 +422,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo4.%20La%20Esperanza.T4.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 4: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T4</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 4: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.La Esperanza.T4</figcaption>
 </figure>
 </div>
 </div>
@@ -432,7 +432,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%205.%20Río%20Claro.T1.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 5: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T1</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 5: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T1</figcaption>
 </figure>
 </div>
 </div>
@@ -442,7 +442,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%206.%20Río%20Claro.T2.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 6: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T2</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 6: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T2</figcaption>
 </figure>
 </div>
 </div>
@@ -452,7 +452,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%207.%20Río%20Claro.T3.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 7: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T3</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 7: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T3</figcaption>
 </figure>
 </div>
 </div>
@@ -462,7 +462,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%208.%20Río%20Claro.T4.%20Potencial,%20Riego%20y%20Fv/Fm-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 8: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T4</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 8: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fm) e irrigación acumulada semanal.Río Claro.T4</figcaption>
 </figure>
 </div>
 </div>
@@ -472,7 +472,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%209.%20Dinámica%20del%20indicador%20Fo.%20La%20Esperanza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fo) e irrigación acumulada semanal.La Esperanza.Tratamientos de riego deficitario</figcaption><p></p>
+<figcaption class="figure-caption">Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fo) e irrigación acumulada semanal.La Esperanza.Tratamientos de riego deficitario</figcaption>
 </figure>
 </div>
 </div>
@@ -482,7 +482,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%2010.%20Dinámica%20del%20indicador%20Fv/Fo.%20La%20Esperanza-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 10: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fo) e irrigación acumulada semanal.La Esperanza.Tratamientos de riego deficitario</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 10: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fo) e irrigación acumulada semanal.La Esperanza.Tratamientos de riego deficitario</figcaption>
 </figure>
 </div>
 </div>
@@ -492,7 +492,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%2011.%20Dinámica%20del%20indicador%20Fo.%20Río%20Claro-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 11: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fo) e irrigación acumulada semanal.Río Claro.Tratamientos de riego deficitario</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 11: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fo) e irrigación acumulada semanal.Río Claro.Tratamientos de riego deficitario</figcaption>
 </figure>
 </div>
 </div>
@@ -502,7 +502,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%2012.%20Dinámica%20del%20indicador%20Fv/Fo.%20Río%20Claro-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 12: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fo) e irrigación acumulada semanal.Río Claro.Tratamientos de riego deficitario</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 12: Dinámicas del potencial hídrico xilématico al mediodía , indicador de fluorescencia (Fv/Fo) e irrigación acumulada semanal.Río Claro.Tratamientos de riego deficitario</figcaption>
 </figure>
 </div>
 </div>
@@ -512,7 +512,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%2013.%20Daños%20por%20categoría.%20La%20Esperanza.-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 13: Daños en cerezas por categorías y por Kg de producción entre cultivos de diferentes tratamientos. La esperanza</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 13: Daños en cerezas por categorías y por Kg de producción entre cultivos de diferentes tratamientos. La esperanza</figcaption>
 </figure>
 </div>
 </div>
@@ -522,7 +522,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="01_reporte_calidad_produccion_files/figure-html/Anexo%2014.%20Daños%20por%20categoría.%20Río%20Claro.-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Fig.Suplementaria 14: Daños en cerezas por categorías y por Kg de producción entre cultivos de diferentes tratamientos. Río Claro</figcaption><p></p>
+<figcaption class="figure-caption">Fig.Suplementaria 14: Daños en cerezas por categorías y por Kg de producción entre cultivos de diferentes tratamientos. Río Claro</figcaption>
 </figure>
 </div>
 </div>
@@ -531,86 +531,86 @@ div.csl-indent {
 </section>
 <section id="referencias" class="level1 unnumbered">
 <h1 class="unnumbered">Referencias</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-abdelfatah2013" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-abdelfatah2013" class="csl-entry" role="listitem">
 Abdelfatah, Ashraf, Xavier Aranda, Robert Savé, Felicidad de Herralde, y Carmen Biel. 2013. <span>«Evaluation of the response of maximum daily shrinkage in young cherry trees submitted to water stress cycles in a greenhouse»</span>. <em>Agricultural Water Management</em> 118. <a href="https://doi.org/10.1016/j.agwat.2012.10.027">https://doi.org/10.1016/j.agwat.2012.10.027</a>.
 </div>
-<div id="ref-arribillaga2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-arribillaga2013" class="csl-entry" role="listitem">
 Arribillaga, Diego. 2013. <span>«Manejo de pre y post cosecha del cultivo del cerezo (Prunus avium L.) en Chile Chico, región de Aysén»</span>. INIA.
 </div>
-<div id="ref-avium2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-avium2021" class="csl-entry" role="listitem">
 Avium, Equipo Técnico. 2021. <span>«Reportes Fenológicos. TP2021-22»</span>. AVIUM.
 </div>
-<div id="ref-bhusal2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bhusal2021" class="csl-entry" role="listitem">
 Bhusal, Narayan, Minsu Lee, Hojin Lee, Arjun Adhikari, Ah Reum Han, Areum Han, y Hyun Seok Kim. 2021. <span>«Evaluation of morphological, physiological, and biochemical traits for assessing drought resistance in eleven tree species»</span>. <em>Science of the Total Environment</em> 779. <a href="https://doi.org/10.1016/j.scitotenv.2021.146466">https://doi.org/10.1016/j.scitotenv.2021.146466</a>.
 </div>
-<div id="ref-blanco2020a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blanco2020a" class="csl-entry" role="listitem">
 Blanco, Victor, Pedro José Blaya-Ros, Roque Torres-Sánchez, y Rafael Domingo. 2020. <span>«Influence of regulated deficit irrigation and environmental conditions on reproductive response of sweet cherry trees»</span>. <em>Plants</em> 9. <a href="https://doi.org/10.3390/plants9010094">https://doi.org/10.3390/plants9010094</a>.
 </div>
-<div id="ref-blanco2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blanco2018" class="csl-entry" role="listitem">
 Blanco, Víctor, Rafael Domingo, Alejandro Pérez-Pastor, Pedro José Blaya-Ros, y Roque Torres-Sánchez. 2018. <span>«Soil and plant water indicators for deficit irrigation management of field-grown sweet cherry trees»</span>. <em>Agricultural Water Management</em> 208. <a href="https://doi.org/10.1016/j.agwat.2018.05.021">https://doi.org/10.1016/j.agwat.2018.05.021</a>.
 </div>
-<div id="ref-blanco2019a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blanco2019a" class="csl-entry" role="listitem">
 Blanco, Víctor, Ginés Benito Martínez-Hernández, Francisco Artés-Hernández, Pedro José Blaya-Ros, Roque Torres-Sánchez, y Rafael Domingo. 2019. <span>«Water relations and quality changes throughout fruit development and shelf life of sweet cherry grown under regulated deficit irrigation»</span>. <em>Agricultural Water Management</em> 217. <a href="https://doi.org/10.1016/j.agwat.2019.02.028">https://doi.org/10.1016/j.agwat.2019.02.028</a>.
 </div>
-<div id="ref-blanco2019b" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blanco2019b" class="csl-entry" role="listitem">
 Blanco, Victor, Roque Torres-Sánchez, Pedro José Blaya-Ros, Alejandro Pérez-Pastor, y Rafael Domingo. 2019. <span>«Vegetative and reproductive response of <span>“Prime Giant”</span> sweet cherry trees to regulated deficit irrigation»</span>. <em>Scientia Horticulturae</em> 249. <a href="https://doi.org/10.1016/j.scienta.2019.02.016">https://doi.org/10.1016/j.scienta.2019.02.016</a>.
 </div>
-<div id="ref-blaya2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blaya2021" class="csl-entry" role="listitem">
 Blaya-Ros, Pedro José, Víctor Blanco, Roque Torres-Sánchez, y Rafael Domingo. 2021. <span>«Drought-adaptive mechanisms of young sweet cherry trees in response to withholding and resuming irrigation cycles»</span>. <em>Agronomy</em> 11. <a href="https://doi.org/10.3390/agronomy11091812">https://doi.org/10.3390/agronomy11091812</a>.
 </div>
-<div id="ref-cb2020a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cb2020a" class="csl-entry" role="listitem">
 Carrasco-Benavides, Marcos, Javiera Antunez-Quilobrán, Antonella Baffico-Hernández, Carlos Ávila-Sánchez, Samuel Ortega-Farías, Sergio Espinoza, John Gajardo, Marco Mora, y Sigfredo Fuentes. 2020. <span>«Performance assessment of thermal infrared cameras of different resolutions to estimate tree water status from two cherry cultivars: An alternative to midday stem water potential and stomatal conductance»</span>. <em>Sensors (Switzerland)</em> 20. <a href="https://doi.org/10.3390/s20123596">https://doi.org/10.3390/s20123596</a>.
 </div>
-<div id="ref-c-b2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-c-b2022" class="csl-entry" role="listitem">
 Carrasco-Benavides, Marcos, Claudia Gonzáles, Eden Tongson, Antonella Baffico-Hénandez, Carlos Ávila-Sánchez, Marcos Mora, y Sigfredo Fuentes. 2022. <span>«Water status estimation of cherry trees using infrared thermal imagery coupled with supervised machine learning modeling»</span>. <em>Computers and Electronics in Agriculture</em> 200 (septiembre).
 </div>
-<div id="ref-cb2020b" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cb2020b" class="csl-entry" role="listitem">
 Carrasco-Benavides, Marcos, Sergio Espinoza Meza, Jeissy Olguín-Cáceres, Diego Muñoz-Concha, Eduardo von Bennewitz, Carlos Ávila-Sánchez, y Samuel Ortega-Farías. 2020. <span>«Effects of regulated post-harvest irrigation strategies on yield, fruit quality and water productivity in a drip-irrigated cherry orchard»</span>. <em>New Zealand Journal of Crop and Horticultural Science</em> 48. <a href="https://doi.org/10.1080/01140671.2020.1721544">https://doi.org/10.1080/01140671.2020.1721544</a>.
 </div>
-<div id="ref-houghton2023" class="csl-entry" role="doc-biblioentry">
+<div id="ref-houghton2023" class="csl-entry" role="listitem">
 E, Houghton, Bevandick K, Neilsen D, Hannam K, y Nelson L. 2023. <span>«Effects of postharvest deficit irrigation on sweet cherry (Prunus avium) in five Okanagan Valley, Canada, orchards: II. Phenology, cold hardiness, fruit yield, and quality»</span>. <em>Canadian Journal of Plant Science</em> 100 (enero): 1-17.
 </div>
-<div id="ref-garreaud2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-garreaud2020" class="csl-entry" role="listitem">
 Garreaud, René D., Juan P. Boisier, Roberto Rondanelli, Aldo Montecinos, Hector H. Sepúlveda, y Daniel Veloso-Aguila. 2020. <span>«The Central Chile Mega Drought (2010–2018): A climate dynamics perspective»</span>. <em>International Journal of Climatology</em> 40. <a href="https://doi.org/10.1002/joc.6219">https://doi.org/10.1002/joc.6219</a>.
 </div>
-<div id="ref-gonzalez2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gonzalez2022" class="csl-entry" role="listitem">
 González, Manuel. 2022. <span>«La inserción comercial chilena en China: El caso de las cerezas»</span>. Universidad de Chile.
 </div>
-<div id="ref-hulbert2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hulbert2017" class="csl-entry" role="listitem">
 Hurlbert, Margot, y Joyeeta Gupta. 2017. <span>«The adaptive capacity of institutions in Canada, Argentina, and Chile to droughts and floods»</span>. <em>Regional Environmental Change</em> 17. <a href="https://doi.org/10.1007/s10113-016-1078-0">https://doi.org/10.1007/s10113-016-1078-0</a>.
 </div>
-<div id="ref-jimenez2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jimenez2015" class="csl-entry" role="listitem">
 Jiménez-Suancha, Sonia Constanza, Oscar Humberto Álvarado S., y Helber Enrique Balaguera-López. 2015. <span>«Fluorescencia como indicador de estrés en &lt;i&gt;Helianthus annuus&lt;/i&gt; L. Una revisión»</span>. <em>Revista Colombiana de Ciencias Hortícolas</em> 9. <a href="https://doi.org/10.17584/rcch.2015v9i1.3753">https://doi.org/10.17584/rcch.2015v9i1.3753</a>.
 </div>
-<div id="ref-johnson1994" class="csl-entry" role="doc-biblioentry">
+<div id="ref-johnson1994" class="csl-entry" role="listitem">
 Johnson, R. S., D. E. Handley, y K. R. Day. 1994. <span>«Postharvest water stress of an early maturing plum»</span>. <em>Journal of Horticultural Science</em> 69. <a href="https://doi.org/10.1080/00221589.1994.11516542">https://doi.org/10.1080/00221589.1994.11516542</a>.
 </div>
-<div id="ref-kupper2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kupper2019" class="csl-entry" role="listitem">
 Küpper, Hendrik, Zuzana Benedikty, Filis Morina, Elisa Andresen, Archana Mishra, y Martin Trtílek. 2019. <span>«Analysis of OJIP Chlorophyll Fluorescence Kinetics and QA Reoxidation Kinetics by Direct Fast Imaging»</span>. <em>Plant Physiology</em> 179 (febrero): 369-81.
 </div>
-<div id="ref-linke2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-linke2010" class="csl-entry" role="listitem">
 Linke, Manfred, Werner B. Herppich, y Martin Geyer. 2010. <span>«Green peduncles may indicate postharvest freshness of sweet cherries»</span>. <em>Postharvest Biology and Technology</em> 58. <a href="https://doi.org/10.1016/j.postharvbio.2010.05.014">https://doi.org/10.1016/j.postharvbio.2010.05.014</a>.
 </div>
-<div id="ref-lopez2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lopez2021" class="csl-entry" role="listitem">
 López-Olivari, R., y F. Ortega-Klose. 2021. <span>«Response of red clover to deficit irrigation: dry matter yield, populations, and irrigation water use efficiency in southern Chile»</span>. <em>Irrigation Science</em> 39. <a href="https://doi.org/10.1007/s00271-020-00693-0">https://doi.org/10.1007/s00271-020-00693-0</a>.
 </div>
-<div id="ref-marsal2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-marsal2010" class="csl-entry" role="listitem">
 Marsal, Jordi, G. Lopez, J. del Campo, M. Mata, A. Arbones, y J. Girona. 2010. <span>«Postharvest regulated deficit irrigation in ’Summit’ sweet cherry: Fruit yield and quality in the following season»</span>. <em>Irrigation Science</em> 28. <a href="https://doi.org/10.1007/s00271-009-0174-z">https://doi.org/10.1007/s00271-009-0174-z</a>.
 </div>
-<div id="ref-mccutchan2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mccutchan2019" class="csl-entry" role="listitem">
 McCutchan, Harold, y K. A. Shackel. 2019. <span>«Stem-water Potential as a Sensitive Indicator of Water Stress in Prune Trees (Prunus domestica L. cv. French)»</span>. <em>Journal of the American Society for Horticultural Science</em> 117. <a href="https://doi.org/10.21273/jashs.117.4.607">https://doi.org/10.21273/jashs.117.4.607</a>.
 </div>
-<div id="ref-moreno2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-moreno2008" class="csl-entry" role="listitem">
 Moreno, González, Perales Vela, y Martha O Salcedo Alvarez. 2008. <span>«LA FLUORESCENCIA DE LA CLOROFILA a COMO HERRAMIENTA EN LA INVESTIGACIÓN DE EFECTOS TÓXICOS EN EL APARATO FOTOSINTÉTICO DE PLANTAS Y ALGAS»</span>. <em>Revista de Educación Bioquímica</em> 27.
 </div>
-<div id="ref-pechan2023" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pechan2023" class="csl-entry" role="listitem">
 Pechan, Paul, Fabian Obster, Marchioro Linda, y Bohle Heidi. 2023. <span>«Climate change impact on fruit farm operations in Chile and Tunisia.Climate change impact on fruit farm operations in Chile and Tunisia.»</span> <em>AgriRxiv</em>, enero.
 </div>
-<div id="ref-pena2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pena2020" class="csl-entry" role="listitem">
 Peña-Guerrero, M. D., A. Nauditt, C. Muñoz-Robles, L. Ribbe, y F. Meza. 2020. <span>«Drought impacts on water quality and potential implications for agricultural production in the Maipo River Basin, Central Chile»</span>. <em>Hydrological Sciences Journal</em> 65. <a href="https://doi.org/10.1080/02626667.2020.1711911">https://doi.org/10.1080/02626667.2020.1711911</a>.
 </div>
-<div id="ref-yoon1990" class="csl-entry" role="doc-biblioentry">
+<div id="ref-yoon1990" class="csl-entry" role="listitem">
 Yoon, Tae Myung, y Hanno Richter. 1990. <span>«Seasonal changes in stomatal responses of sweet cherry and plum to water status in detached leaves»</span>. <em>Physiologia Plantarum</em> 80. <a href="https://doi.org/10.1111/j.1399-3054.1990.tb05673.x">https://doi.org/10.1111/j.1399-3054.1990.tb05673.x</a>.
 </div>
 </div>
@@ -645,9 +645,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -712,6 +726,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
